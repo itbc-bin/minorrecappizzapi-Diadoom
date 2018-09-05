@@ -3,9 +3,9 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 pizzaDB = [
-    {'name':'tonno'},
-    {'name':'salami'},
-    {'name':'magarita'}
+    {'name':'tonno', "rating" : "5 reten","prijs": 700,"vorm" : "rond", "ingredienten" : ['tomaat','kaas','tonijn','e-nummers','tarwe','smaakstoffen']},
+    {'name':'salami', "rating" : "3 reten","prijs": 600,"vorm" : "vierkant", "ingredienten" : ['vlees','kaas','tomaat','e-nummers','tarwe','koen']},
+    {'name':'magarita', "rating" : "4 reten","prijs": 500,"vorm" : "driehoek", "ingredienten" :['kaas','tomaat','e-nummers','tarwe','koen']}
 ]
 
 
@@ -17,9 +17,9 @@ def getPizza():
 @app.route("/<string:name>", methods=['GET'])
 def getOnePizza(name):
     resultPizza = []
-    for tempDic in pizzaDB:
-        if name == tempDic['name']:
-            resultPizza.append(tempDic)
+    for pizza in pizzaDB:
+        if name == pizza['name']:
+            resultPizza.append(pizza)
 
     return jsonify({'pizzaDB':resultPizza})
 
