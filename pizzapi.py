@@ -56,6 +56,18 @@ def addONePizza():
     pizzaDB.append(newPizza)
     return jsonify({'pizzaDB' : pizzaDB})
 
+@app.route("/addIngredient/", methods=["POST"])
+def addIngredient():
+    pizzaname = request.json['name']
+    for pizza in pizzaDB:
+        if pizzaname == pizza["name"]:
+            ingredienten = pizza["ingredienten"]
+            addingredienten = request.json["ingredienten"]
+            for i in addingredienten:
+                if i not in ingredienten:
+                    ingredienten.append(i)
+            pizza["ingredienten"] = ingredienten
+    return jsonify({'pizzaDB': pizzaDB})
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
