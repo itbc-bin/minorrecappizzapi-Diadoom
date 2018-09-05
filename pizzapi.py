@@ -69,5 +69,24 @@ def addIngredient():
             pizza["ingredienten"] = ingredienten
     return jsonify({'pizzaDB': pizzaDB})
 
+@app.route("/vorm_edit/<string:name>", methods=['PUT'])
+def putPizza(name):
+    resultPizza = []
+    for pizza in pizzaDB:
+        if pizza['name'] == name:
+            resultPizza.append(pizza)
+    resultPizza[0]['vorm'] = request.json['vorm']
+    return jsonify({'pizzadb': pizzaDB})
+
+@app.route("/<string:name>", methods=["DELETE"])
+def delPizza(name):
+    resultPizza=[]
+    for pizza in pizzaDB:
+        if pizza['name'] == name:
+            resultPizza.append(pizza)
+    pizzaDB.remove(resultPizza[0])
+    return jsonify({'pizzaDB' : pizzaDB})
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=8080)

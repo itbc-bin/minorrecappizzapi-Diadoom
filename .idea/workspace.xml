@@ -32,14 +32,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="938" />
-          <entry key="txt" value="27" />
+          <entry key="py" value="1908" />
+          <entry key="txt" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="938" />
+          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="Python" value="1908" />
         </counts>
       </usages-collector>
     </session>
@@ -49,10 +49,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pizzapi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="309">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
-                <marker date="1536151799995" expanded="true" signature="1241:1774" ph="..." />
+                <marker date="1536156895268" expanded="true" signature="2561:2758" ph="..." />
               </folding>
             </state>
           </provider>
@@ -71,9 +71,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="523" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -96,7 +96,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -168,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536150322402</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="post request toegevoegd">
+      <created>1536151958259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536151958259</updated>
+    </task>
+    <task id="LOCAL-00004" summary="post request ingredienten toevoegen">
+      <created>1536154275992</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536154275992</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -194,7 +208,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -209,15 +223,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pizza api" />
     <MESSAGE value="pizza api db uitbreiding" />
-    <option name="LAST_COMMIT_MESSAGE" value="pizza api db uitbreiding" />
+    <MESSAGE value="post request toegevoegd" />
+    <MESSAGE value="post request ingredienten toevoegen" />
+    <option name="LAST_COMMIT_MESSAGE" value="post request ingredienten toevoegen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pizzapi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="309">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
-            <marker date="1536151799995" expanded="true" signature="1241:1774" ph="..." />
+            <marker date="1536156895268" expanded="true" signature="2561:2758" ph="..." />
           </folding>
         </state>
       </provider>
